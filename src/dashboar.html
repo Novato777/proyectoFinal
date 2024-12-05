@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficos de Consumo en energías renovables - Colombia</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="top-right-button">
+    <a href="Pagina.html"><button>Inicio</button></a>
+  </div>
+
+  <h1>Consumo de Energías renovables en Colombia (2021)</h1>
+
+  <div class="chart-container">
+    <h2>Gráfica de Barras</h2>
+    <canvas id="barChart"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Gráfica de Torta</h2>
+    <canvas id="pieChart"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Gráfica de Líneas - Consumo de energía hidroeléctrica en los últimos años (Colombia)</h2>
+    <canvas id="lineChart"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Gráfica de Área</h2>
+    <canvas id="areaChart"></canvas>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y agradable */
+    margin: 0;
+    padding: 0;
+    background-color: #eaf7ef; /* Fondo ambiental suave */
+    color: #333;
+    line-height: 1.8;
+  }
+  
+ /* Fondo con animación */
+body {
+  background: linear-gradient(45deg, #ff6f61, #ffa64d, #ffd700);
+  background-size: 300% 300%;
+  transition: background-position 0.5s ease-in-out;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Cambio de fondo al pasar el cursor */
+body:hover {
+  background-position: 100% 100%;
+}
+
+/* Fondo con animación */
+body {
+  background: linear-gradient(45deg, #ff6f61, #ffa64d, #ffd700);
+  background-size: 300% 300%;
+  transition: background-position 0.5s ease-in-out;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Cambio de fondo al pasar el cursor */
+body:hover {
+  background-position: 100% 100%;
+}
+
+/* Barra de navegación */
+.navbar {
+  background: transparent;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-position 0.5s ease-in-out;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background-size: 200% 200%;
+}
+
+/* Efecto de movimiento en el fondo al pasar el cursor */
+.navbar:hover {
+  background-position: 100% 0;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Lora', serif; /* Fuente elegante */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ligera para resaltar */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #ffd700; /* Resalta el amarillo del atardecer */
+}
+
+/* Lista de enlaces */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem; /* Espaciado amplio */
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem; /* Aumenta el tamaño del texto */
+  transition: color 0.3s;
+}
+
+/* Cambiar color a rojo al pasar el cursor */
+.navbar ul li a:hover {
+  color: red; /* Cambiar a rojo */
+}
+
+/* Botones */
+.navbar-buttons button {
+  background-color: #ff7043; /* Naranja cálido */
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.1rem; /* Tamaño adecuado */
+  font-family: 'Roboto', sans-serif; /* Fuente moderna */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón hover */
+.navbar-buttons button:hover {
+  background-color: #ff5722; /* Naranja más intenso */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 5px solid #a8f17e;
+    background-image: url(imagenes/panel\ solar.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el cursor */
+.hero:hover {
+    transform: scale(1.05); /* Ampliar ligeramente la imagen */
+    filter: brightness(1.2); /* Aumentar el brillo para un efecto más impactante */
+}
+
+  
+  /* Estilo para el título y párrafo dentro de .hero */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  transition: transform 0.5s ease, color 0.5s ease; /* Suaviza el cambio de tamaño y color */
+}
+
+.hero h1:hover {
+  transform: scale(1.1); /* Incrementa ligeramente el tamaño al pasar el cursor */
+  color: #ffdd57; /* Cambia el color para destacar */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Suaviza el cambio de opacidad y posición */
+}
+
+.hero p:hover {
+  transform: translateY(-5px); /* Eleva el texto ligeramente */
+  opacity: 0.8; /* Reduce un poco la opacidad para un efecto visual suave */
+}
+
+/* Animación para .imagen-frase */
+.imagen-frase {
+  position: relative;
+  text-align: center;
+  background-image: url(imagenes/renovable.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5rem 1rem;
+  transition: transform 0.5s ease, filter 0.5s ease; /* Animación para escala y brillo */
+}
+
+.imagen-frase:hover {
+  transform: scale(1.05); /* Amplía ligeramente la imagen */
+  filter: brightness(1.2); /* Aumenta el brillo al pasar el cursor */
+}
+
+/* Estilo de la sección con imagen de fondo */
+.imagen-eolica {
+  position: relative;
+  text-align: center;
+  background-image: url(imagenes/eolica.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5rem 1rem;
+}
+
+/* Contenedor del cuestionario */
+.texto-centrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left; /* Alineación para preguntas */
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(111, 151, 147, 0.8); /* Fondo translúcido */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para cada pregunta */
+.pregunta {
+  margin-bottom: 0,1%; /* Reducir el espacio entre las preguntas */
+  transition: margin-bottom 0.3s ease;
+}
+
+/* Títulos de preguntas */
+.pregunta p {
+  font-size: 1.3rem; /* Aumenta el tamaño de la pregunta */
+  margin-bottom: 0.3rem; /* Reducir espacio entre la pregunta y las opciones */
+  color: #333; /* Color oscuro para el texto */
+}
+
+/* Etiquetas de las opciones */
+.pregunta label {
+  font-size: 1.1rem; /* Un poco más grande */
+  display: block;
+  margin: 0.1rem 0; /* Reducir el margen entre las opciones */
+  color: #444; /* Tono oscuro para el texto */
+}
+
+/* Estilo para las opciones de respuesta */
+.pregunta input[type="radio"] {
+  margin-right: 0.5rem; /* Separación entre el botón de radio y la etiqueta */
+  cursor: pointer; /* Cambio de cursor para mejor accesibilidad */
+}
+
+/* Botón de enviar */
+#enviar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px; /* Aumentado el padding para que sea más grande */
+  font-size: 1.4rem; /* Aumentado el tamaño de la fuente */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#enviar:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Mayor sombra al hacer hover */
+}
+
+/* Estilo para los botones en general */
+button {
+  font-family: 'Roboto', sans-serif; /* Fuente moderna */
+  font-size: 1.2rem; /* Tamaño adecuado */
+  padding: 0.8rem 1.5rem; /* Ajustado el padding */
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Color verde */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Efecto hover en los botones */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Estilo para el contenedor del formulario en pantallas pequeñas */
+@media (max-width: 768px) {
+  .texto-centrado {
+    width: 90%; /* Ajuste para pantallas pequeñas */
+    padding: 1.5rem; /* Menos padding */
+  }
+  .pregunta p {
+    font-size: 1.1rem; /* Reducir ligeramente el tamaño de las preguntas en pantallas pequeñas */
+  }
+  #enviar {
+    font-size: 1.2rem; /* Reducir el tamaño de la fuente del botón */
+    padding: 10px 20px; /* Reducir padding en botones */
+  }
+}
+
+.texto-cuestionario {
+  font-size: 2rem;
+}
+
+
+/* Clase para el título */
+.titulo-renovable {
+  font-family: 'Arial', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambia la fuente a Arial */
+  font-size: 2rem; /* Tamaño de fuente mayor */
+  font-weight: 700; /* Negrita para darle énfasis */
+  color: #ffffff; /* Un color verde para representar energía renovable */
+  text-align: center; /* Centra el texto */
+  margin-top: 20px; /* Espacio arriba del título */
+  text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre las letras */
+  transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+  .titulo-section {
+    display: flex; /* Cambiar a Flexbox para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 1.8rem;
+    background-color: rgba(255, 72, 0, 0.392); /* Fondo semi-transparente */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Texto blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    height: 6rem; /* Ajusta la altura del contenedor */
+    overflow: hidden;
+    margin: 0;
+}
+
+.titulo-section h3 {
+    font-size: 3.3rem; /* Tamaño moderado para que se vea bien */
+    text-align: center;
+    margin: 0; /* Sin márgenes adicionales */
+    line-height: 1.2; /* Ajusta la altura de línea para una mejor apariencia */
+    font-weight: bold; /* Resalta el texto */
+}
+
+  
+  /* Sección de Información */
+  .info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: rgba(111, 151, 147, 0.9); /* Un tono verde suave que complementa la imagen */
+    background-image: url('/mnt/data/eolica.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Texto blanco para resaltar sobre el fondo oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidad */
+  }
+  
+  
+ /* Estilo para los cajones de información */
+.info-box {
+  background-color: rgba(255, 221, 87, 0.6); /* Fondo translúcido con un color suave */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadido transición para la sombra */
+}
+
+/* Efecto hover */
+.info-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar un efecto de elevación */
+}
+
+/* Estilo del título */
+.info-box h2 {
+  color: #4b6c2f; /* Un tono verde más suave */
+  font-family: 'Roboto', sans-serif; /* Cambié la fuente a Roboto para un estilo más limpio */
+  font-size: 1.6rem; /* Aumenté el tamaño para darle más protagonismo */
+  margin-bottom: 0.8rem;
+  text-transform: uppercase; /* Hizo que el título sea en mayúsculas */
+  letter-spacing: 1px; /* Añadí espaciado entre letras */
+}
+
+/* Estilo del párrafo */
+.info-box p {
+  font-family: 'Arial', sans-serif; /* Cambié la fuente a Arial para mayor claridad */
+  font-size: 1.1rem; /* Aumenté ligeramente el tamaño del texto */
+  line-height: 1.6; /* Mejoré el espaciado entre líneas */
+  color: #333; /* Un color gris oscuro para mejorar la legibilidad */
+}
+
+  /* Modales */
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-image {
+  display: block;
+  margin: 1rem auto 0; /* Centra la imagen con espacio superior */
+  width: 300px; /* Ajusta el tamaño de las imágenes */
+  height: 300px; /* Asegura proporciones consistentes */
+  object-fit: cover; /* Mantén las proporciones de la imagen */
+  border-radius: 8px; /* Añade bordes redondeados (opcional) */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-contact {
+  background-color: #2c3e50; /* Color oscuro con un tono más suave */
+  color: #ecf0f1; /* Texto en un tono más claro para mayor contraste */
+  padding: 2rem 1rem; /* Aumenté el padding para hacerlo más espacioso */
+  text-align: center;
+  font-size: 1rem; /* Tamaño de fuente ligeramente más grande para mayor legibilidad */
+  margin-top: 3rem;
+  border-top: 2px solid #ffdd57; /* Añadí una línea superior de color dorado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Agregué una sombra para darle profundidad */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.footer-links img {
+  width: 20px; /* Tamaño de la imagen */
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+
+.footer-contact a {
+  color: #ffdd57; /* Color dorado para los enlaces */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave para el color al hacer hover */
+}
+
+.footer-contact a:hover {
+  color: #f39c12; /* Color más brillante cuando el mouse pasa sobre el enlace */
+}
+
+.footer-contact .social-media {
+  margin-top: 1rem;
+}
+
+.footer-contact .social-media a {
+  margin: 0 15px; /* Mayor espacio entre los íconos */
+  display: inline-block;
+}
+
+.footer-contact .social-icon {
+  width: 35px; /* Iconos más grandes para mejor visibilidad */
+  height: 35px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-contact .social-icon:hover {
+  transform: scale(1.2); /* Aumentar el tamaño de los íconos al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+  .footer-contact {
+    padding: 1.5rem 1rem; /* Menos padding en pantallas pequeñas */
+    font-size: 0.9rem; /* Reducir el tamaño de fuente */
+  }
+
+  .footer-contact .social-icon {
+    width: 30px; /* Reducir el tamaño de los íconos */
+    height: 30px;
+  }
+}

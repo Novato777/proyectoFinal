@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #eaf4fc, #ffffff);
+    color: #333;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: #0073e6;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar button {
+    background-color: #005bb5;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .navbar button:hover {
+    background-color: #004080;
+  }
+  
+  /* Contenedor principal */
+  .main-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sección informativa con frase animada */
+  .info-section {
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: url('imagenes/calculo.jpg') no-repeat center/cover; /* Cambia la URL por una imagen relevante */
+    animation: fade-in 5s infinite alternate;
+  }
+  
+  .info-section p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* Animación del fondo */
+  @keyframes fade-in {
+    from {
+      opacity: 0.8;
+      transform: scale(1.02);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Sección de la calculadora */
+  .calculator-section {
+    padding: 2rem;
+    background-color: #f9fbfe;
+    border: 2px solid #0073e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 115, 230, 0.2);
+  }
+  
+  .calculator-section h2 {
+    text-align: center;
+    color: #0073e6;
+  }
+  
+  .calculator-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calculator-section input {
+    padding: 0.5rem;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .calculator-section button {
+    padding: 0.7rem 1.5rem;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .calculator-section button:hover {
+    background-color: #005bb5;
+  }
+  
+  .result {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  

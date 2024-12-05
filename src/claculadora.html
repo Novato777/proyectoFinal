@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Twh</title>
+  <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+  <!-- Barra principal -->
+  <header class="navbar">
+    <h1>Calculadora de Twh</h1>
+    <nav>
+      <a href="Pagina.html"><button id="inicio-btn">Inicio</button></a>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal -->
+  <main class="main-content">
+    <!-- Texto sobre energía solar -->
+    <section class="info-section">
+        <p>
+          La energía solar es una alternativa limpia y sostenible para reducir el impacto ambiental. 
+          Conocer tu consumo energético puede ayudarte a tomar decisiones informadas para un futuro más verde.
+        </p>
+      </section>
+
+    <!-- Formulario de cálculo -->
+    <section class="calculator-section">
+      <h2>Calcula tu consumo energético</h2>
+      <form id="calculator-form">
+        <!-- Campo para ingresar el valor en kWh -->
+        <label for="kwh-input">Ingresa tu consumo en kWh:</label>
+        <input type="number" id="kwh-input" placeholder="Escribe tu consumo en kWh" required>
+        <button type="submit">Calcular</button>
+      </form>
+      <!-- Resultado del cálculo -->
+      <div id="result" class="result"></div>
+    </section>
+
+    <!-- Espacio para la imagen animada -->
+    <section class="image-section">
+      <div id="animated-image"></div>
+    </section>
+  </main>
+
+  <!-- Archivo JavaScript -->
+  <script src="calculadora.js"></script>
+</body>
+</html>

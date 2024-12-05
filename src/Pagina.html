@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBJ - Energía Renovable</title>
+  <link rel="stylesheet" href="estiloPinicio.css">
+  <script src="InicioFuncionalidades.js"></script>
+ 
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">BBJ</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#info">Información</a></li>
+        <li><a href="#contacto">¿Que tanto sabes? - sugerencias</a></li>  
+      </ul>
+      <div class="navbar-buttons">
+        <a href="dashboar.html"><button>Dashboard</button></a>
+        <a href="claculadora.html"><button>Calculadora</button></a>
+        <a href="datosHistoricos.html"><button>Datos Históricos</button></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Explora el Futuro con Energías Renovables</h1>
+      <p>Descubre cómo las fuentes de energía limpia pueden transformar el mundo.</p>
+    </section>
+
+    <section id="imagen-frase" class="imagen-frase">
+      <div class="frase-contenedor">
+        <h2>“El futuro depende de lo que hagamos hoy.”</h2>
+        <p>Las energías renovables son la llave para un futuro más limpio y sostenible. Al aprovechar el poder del sol, el viento y el agua, no solo cuidamos nuestro planeta, sino que también aseguramos un legado de esperanza para las próximas generaciones.</p>
+      </div>
+    </section>
+
+    <div class="titulo-section">
+      <h3>Tipos de energia renovable</h3>
+      </marquee>
+    </div>
+
+    <section id="info" class="info-section">
+      <div class="info-box" onclick="openModal('solar')">
+        <h2>Solar</h2>
+        <p>La energía solar aprovecha la luz del sol para generar electricidad limpia y sostenible.</p>
+      </div>
+      <div class="info-box" onclick="openModal('eolica')">
+        <h2>Eólica</h2>
+        <p>La energía eólica utiliza el viento para generar energía renovable con impacto ambiental mínimo.</p>
+      </div>
+      <div class="info-box" onclick="openModal('hidraulica')">
+        <h2>Hidráulica</h2>
+        <p>La energía hidráulica aprovecha la fuerza del agua en movimiento para producir electricidad.</p>
+      </div>
+    </section>
+    
+    <!-- Modales para información -->
+<div id="modal-solar" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('solar')">&times;</span>
+    <h2>Energía Solar</h2>
+    <p>La energía solar se obtiene del sol, aprovechando su radiación mediante paneles fotovoltaicos o colectores térmicos. 
+      Es una fuente inagotable y limpia, ideal para generar electricidad o calentar agua. Por ejemplo, grandes plantas solares como Noor Ouarzazate en Marruecos generan electricidad para miles de hogares. 
+      Además, en hogares individuales se utilizan paneles solares en techos para reducir costos de electricidad y disminuir la huella de carbono.</p>
+    <img src="imagenes/GIFF_ENERGIA SOLAR.gif" alt="Energía Solar" class="modal-image">
+  </div>
+</div>
+
+<div id="modal-eolica" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('eolica')">&times;</span>
+    <h2>Energía Eólica</h2>
+    <p>La energía eólica utiliza turbinas que convierten la fuerza del viento en electricidad. Es una opción limpia y efectiva para reducir la dependencia de combustibles fósiles.
+      La energía eólica transforma la fuerza del viento en electricidad mediante aerogeneradores. Es una de las fuentes renovables más eficientes y limpias. 
+      Un ejemplo destacado es el parque eólico Alta Wind Energy Center en California, que abastece a miles de hogares con energía sostenible. 
+      Además, en regiones costeras, se instalan turbinas marinas, como las del proyecto Hornsea One en el Reino Unido, aprovechando los fuertes vientos del océano.</p>
+    <img src="imagenes/GIFF ENERGIA_EOLICA.gif" alt="Energía Eólica" class="modal-image">
+  </div>
+</div>
+
+<div id="modal-hidraulica" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('hidraulica')">&times;</span>
+    <h2>Energía Hidráulica</h2>
+    <p>La energía hidráulica utiliza el movimiento del agua, como en ríos o presas, para accionar turbinas que generan electricidad. 
+      Es una de las fuentes renovables más antiguas y confiables. Por ejemplo, la central hidroeléctrica de Itaipú, en la frontera entre Brasil y Paraguay, es una de las más grandes del mundo, suministrando energía a millones de personas. 
+      A menor escala, también existen turbinas en corrientes de agua para abastecer comunidades rurales.</p>
+    <img src="imagenes/GIFF ENERGIA_HIDRAULICA.gif" alt="Energía Hidráulica" class="modal-image">
+  </div>
+</div>
+
+    
+  </main>
+
+  <footer id="contacto" class="footer">
+
+    <section id="imagen-eolica" class="imagen-eolica">
+      <h5 class="titulo-renovable">¿que tanto sabes?<br>Cuestionario sobre Energías Renovables:</h5>
+        <div>
+          <p class="texto-cuestionario">A continucaiocn tendras un pequeño cuestionario con 5 preguntas respecto a energia renovable para poner en practica tu conocimiento</p>
+        </div>
+      <div class="texto-centrado">
+        <form id="cuestionario">
+          <!-- Pregunta 1 -->
+          <div class="pregunta">
+            <p>1. ¿Cuál de estas es una fuente de energía renovable?</p>
+            <label><input type="radio" name="pregunta1" value="correcto"> Energía Solar</label><br>
+            <label><input type="radio" name="pregunta1" value="incorrecto"> Carbón</label><br>
+            <label><input type="radio" name="pregunta1" value="incorrecto"> Gas Natural</label>
+          </div>
+          <!-- Pregunta 2 -->
+          <div class="pregunta">
+            <p>2. ¿Qué gas se reduce al usar energía renovable?</p>
+            <label><input type="radio" name="pregunta2" value="correcto"> Dióxido de Carbono (CO₂)</label><br>
+            <label><input type="radio" name="pregunta2" value="incorrecto"> Nitrógeno</label><br>
+            <label><input type="radio" name="pregunta2" value="incorrecto"> Ozono</label>
+          </div>
+          <!-- Pregunta 3 -->
+          <div class="pregunta">
+            <p>3. ¿Qué país lidera en generación de energía eólica?</p>
+            <label><input type="radio" name="pregunta3" value="incorrecto"> India</label><br>
+            <label><input type="radio" name="pregunta3" value="correcto"> Dinamarca</label><br>
+            <label><input type="radio" name="pregunta3" value="incorrecto"> Sudáfrica</label>
+          </div>
+          <!-- Pregunta 4 -->
+          <div class="pregunta">
+            <p>4. ¿Cuál es el principal componente de un panel solar?</p>
+            <label><input type="radio" name="pregunta4" value="correcto"> Silicio</label><br>
+            <label><input type="radio" name="pregunta4" value="incorrecto"> Aluminio</label><br>
+            <label><input type="radio" name="pregunta4" value="incorrecto"> Cobre</label>
+          </div>
+          <!-- Pregunta 5 -->
+          <div class="pregunta">
+            <p>5. ¿Qué porcentaje de la energía del mundo proviene de fuentes renovables?</p>
+            <label><input type="radio" name="pregunta5" value="incorrecto"> Menos del 10%</label><br>
+            <label><input type="radio" name="pregunta5" value="correcto"> Alrededor del 25%</label><br>
+            <label><input type="radio" name="pregunta5" value="incorrecto"> Más del 50%</label>
+          </div>
+          <!-- Botón de enviar -->
+          <button type="button" id="enviar" onclick="verificarRespuestas()">Enviar Respuestas</button>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Modal para mostrar los resultados -->
+    <div id="modal-resultados" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('resultados')">&times;</span>
+        <h2>Resultado del Cuestionario</h2>
+        <p id="resultado"></p>
+        <p id="correcciones"></p>
+      </div>
+    </div>
+    
+       
+    
+  
+    <div class="formulario-contacto">
+      <div class="form-container">
+        <h2>Tú opinión nos importa</h2>
+        <div class="texto-formulario1">
+          <p>Por eso nos gustaría conocer tu punto de vista respecto a esta página web para en futuras actualizaciones poder mejorarla.</p>
+          <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+    
+            <label for="razon">tu opinion</label>
+            <textarea id="razon" name="razon" placeholder="tu opinion puede mejorar este lugar" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Pie de página con contacto y redes sociales -->
+    <div class="footer-contact">
+      <p>Correo Electrónico: elg582676@gmail.com</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank"><img src="imagenes/icono facebook.png" alt="Facebook" class="social-icon"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="imagenes/icono twtter.png" alt="Twitter" class="social-icon"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="imagenes/instagram.png" alt="Instagram" class="social-icon"></a>
+      </div>
+    </div>
+  
+  </footer>
+  
+  <link rel="stylesheet" href="formularioInicio.css">
+  
+</body>
+</html>
+

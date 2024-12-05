@@ -1,0 +1,92 @@
+/* Estilo del formulario de contacto */
+.formulario-contacto {
+  margin-top: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 400px; /* Limita el ancho del formulario */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container h2 {
+  font-size: 1.5rem; /* Reducido el tamaño */
+  margin-bottom: 0.8rem;
+  color: #ffdd57;
+  text-align: center;
+}
+
+.texto-formulario1 p {
+  font-size: 1rem; /* Reducido el tamaño */
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center; /* Centrado para mejor apariencia */
+}
+
+/* Estilo para los campos del formulario */
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; /* Reducido el espacio entre los campos */
+}
+
+.formulario-contacto label {
+  font-size: 0.9rem; /* Reducido el tamaño */
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.9rem; /* Reducido el tamaño de la fuente */
+}
+
+.formulario-contacto input:focus, .formulario-contacto textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffdd57;
+}
+
+.formulario-contacto button {
+  padding: 0.6rem;
+  background-color: #ffdd57;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Reducido el tamaño */
+  margin-top: 1rem;
+}
+
+.formulario-contacto button:hover {
+  background-color: #f5c00b;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .formulario-contacto {
+    padding: 1.2rem;
+  }
+
+  .form-container h2 {
+    font-size: 1.3rem; /* Ajuste en pantallas más pequeñas */
+  }
+
+  .texto-formulario1 p {
+    font-size: 0.9rem;
+  }
+
+  .formulario-contacto label {
+    font-size: 0.8rem; /* Ajuste en pantallas más pequeñas */
+  }
+
+  .formulario-contacto input, .formulario-contacto textarea {
+    font-size: 0.8rem;
+  }
+
+  .formulario-contacto button {
+    font-size: 0.9rem; /* Ajuste en pantallas más pequeñas */
+  }
+}
